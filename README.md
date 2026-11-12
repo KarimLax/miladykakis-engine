@@ -2,7 +2,7 @@
 
 Miladykakis Engine is a local browser-based PFP collection engine for generating, previewing, editing, postproducing, and managing generative avatar collections.
 
-It runs as a local GUI at `http://localhost:3000` and reads artwork from local layer folders. The engine supports ordered layer-based generation, clean NFT metadata output, safe collection management tools, and an isolated Phase 2 postproduction workspace for editing generated pieces without touching the original Output collection.
+It runs as a local GUI at `http://localhost:3000` on macOS and reads artwork from local layer folders. **To use the AI Chef tab, install DiffusionBee on your Mac first.** AI Chef depends on DiffusionBee for local Stable Diffusion generation. The engine supports ordered layer-based generation, clean NFT metadata output, safe collection management tools, and an isolated Phase 2 postproduction workspace for editing generated pieces without touching the original Output collection.
 
 ## Features
 
@@ -64,14 +64,10 @@ buildphase2/     Phase 2 working copy, ignored by default
 From the project folder:
 
 ```bash
-node gui/server.js
+npm start
 ```
 
-Then open:
-
-```text
-http://localhost:3000
-```
+Then open `http://localhost:3000`.
 
 ## Tests
 
